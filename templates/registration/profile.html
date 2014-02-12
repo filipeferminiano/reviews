@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load chartkick %}
+    
+
+{% block script %}
+    <script src="http://www.google.com/jsapi"></script>
+    <script src="http://ankane.github.io/chartkick/chartkick.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="static/chartkick.js"></script>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+<div class="row">
+    <div class="col-md-3">
+        <a href="results">ssss</a>
+        {% for survey in n_survey %}
+            <a href = "#" class="list-group-item">{{ survey }}</a>
+        {% endfor %}
+        
+        <a href = "#" class="list-group-item">Minhas Surveys</a>
+        <a href = "#" class="list-group-item">Respondentes</a>
+        <a href="#" class="list-group-item"> Morbi leo risus</a>
+        <a href="#" class="list-group-item">asdsadsa </a>
+    </div>
+    <div class="col-md-9">
+    {% pie_chart browser_stats with library={"title":"Browser Statistics, May 2013"} %}    
+        
+    <h1>{{ n }}</h1>    
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+    
+    
+    
+{% endblock %}

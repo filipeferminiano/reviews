@@ -1,0 +1,11 @@
+@charset "utf-8";
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:regular,italic,bold");
+
+/* common
+----------------------------------------------------------------------------- */
+logo-custom{
+	font-size: 12px;
+	font-family: 'Open Sans', arial, tahoma, sans-serif;
+	font-size: large;
+	color: black;
+}

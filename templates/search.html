@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <p>{{ msg }}</p>
+    <form class="search_form" action="/search/" method="get">
+        <input type="text" name="q" Placeholder="Buscar">
+        <button type="button" class="btn btn-primary btn-lg" value="Search">
+            <span class="glyphicon glyphicon-star"> Buscar</span>
+        </button>
+        <input type="submit" value="Search" />
+    </form>
+{% endblock content %}
